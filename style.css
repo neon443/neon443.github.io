@@ -1,8 +1,6 @@
 *{
 	box-sizing: border-box;
-}
-b body p h1 h2 h3{
-	margin: 0px;
+	margin: 0;
 }
 b{
 	color: #007AFF
@@ -11,7 +9,6 @@ body{
 	background-color: #f2f2f2;
 	color: #333333;
 	font-family: system-ui;
-	margin: 0px;
 	height: 100%;
 }
 p{
