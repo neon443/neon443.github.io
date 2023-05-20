@@ -1,0 +1,44 @@
+* {
+	box-sizing: border-box;
+}
+b{color:#007AFF}
+body{
+	background-color: #f2f2f2;
+	color:#333333;
+	font-family: system-ui;
+	margin: auto;
+	overflow-x: hidden;
+}
+p{
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+h1{
+	font-size: 45px;
+	font-weight: 800;
+}
+h2{
+	font-size: 30px;
+	font-weight:300;
+	margin-top:-38;
+}
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color:#1C1C1E;
+		color: #f1f1f1;
+	}
+	#transaction {
+		background-color: #191919;
+		box-shadow: none;
+	}
+	p{
+		color: #AAAAAA;
+	}
+}
+@media screen and (max-width: 600px) {
+	*{
+		width: 100%;
+	}
+}
