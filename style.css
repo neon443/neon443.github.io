@@ -1,15 +1,18 @@
 *{
 	box-sizing: border-box;
 }
+b body p h1 h2 h3{
+	margin: 0px;
+}
 b{
-	color:#007AFF
+	color: #007AFF
 }
 body{
 	background-color: #f2f2f2;
-	color:#333333;
+	color: #333333;
 	font-family: system-ui;
-	margin: auto;
-	overflow-x: hidden;
+	margin: 0px;
+	height: 100%;
 }
 p{
 	font-size: 20px;
@@ -17,23 +20,26 @@ p{
 }
 h1{
 	font-size: 45px;
+	font-weight: 750;
 	padding: 20px;
-	font-weight: 600;
 }
 h2{
-	font-size: 30px;
-	font-weight:300;
-	margin-top:-38;
+	font-size: 35px;
+	font-weight: 300;
+	padding: 20px;
+}
+h3{
+	font-size: 25px;
+	font-weight: 200;
 	padding: 20px;
 }
 @media (prefers-color-scheme: dark) {
 	body {
-		background-color:#1C1C1E;
+		background-color: #1C1C1E;
 		color: #f1f1f1;
 	}
 	#transaction {
 		background-color: #191919;
-		box-shadow: none;
 	}
 	p{
 		color: #AAAAAA;
