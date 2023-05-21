@@ -5,6 +5,9 @@
 b{
 	color: #007AFF
 }
+a{
+	color: #41b6e8;
+}
 .topbar{
 	position: fixed;
 	top: 0px;
