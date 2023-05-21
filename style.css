@@ -53,16 +53,13 @@ h3{
 @media (prefers-color-scheme: dark) {
 	body {
 		background-color: #1C1C1E;
-		color: #f1f1f1;
+		color: #f2f2f2;
 	}
 	#transaction {
-		background-color: #191919;
+		background-color: #222222;
 	}
 	p{
 		color: #e6e6e6;
-	}
-	.topbar{
-		background-color: rgba(1, 1, 1, 0.25);
 	}
 }
 @media screen and (max-width: 600px) {
