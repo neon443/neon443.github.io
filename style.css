@@ -8,7 +8,7 @@ b {
 a {
 	color: #007AFF
 }
-.topbar {
+#topbar {
 	position: fixed;
 	top: 0px;
 	backdrop-filter: blur(2.5px);
@@ -16,6 +16,9 @@ a {
 	box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.4);
 	-webkit-box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.4);
 	width: 100%;
+}
+#topbarTitle {
+	
 }
 body {
 	background-color: #f2f2f2;
