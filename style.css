@@ -2,15 +2,12 @@
 	box-sizing: border-box;
 	margin: 0px;
 }
-
 b {
 	color: #ff6200
 }
-
 a {
 	color: #007AFF
 }
-
 .topbar {
 	width: 100%;
 	overflow: hidden;
@@ -24,45 +21,38 @@ a {
 	-moz-box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.25);
 	box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.25);	
 }
-
 .topbar * {
 	display: inline;
 }
-
 .contentPush{
-	height: 60px;
+	height: 74px;
 }
-
 body {
 	background-color: #f2f2f2;
 	color: #222222;
 	font-family: system-ui;
 }
-
 p {
 	font-size: 20px;
 	padding-left: 20px;
 	padding-right: 20px;
 }
-
 h1 {
-	font-size: 45px;
+	font-size: 40px;
 	font-weight: 750;
 	padding-top: 0px;
 	padding-bottom: 0px;
 	padding-left: 20px;
 	padding-right: 20px;
 }
-
 h2 {
-	font-size: 35px;
+	font-size: 30px;
 	font-weight: 300;
 	padding-top: 0px;
 	padding-bottom: 0px;
 	padding-left: 20px;
 	padding-right: 20px;
 }
-
 h3 {
 	font-size: 25px;
 	font-weight: 200;
@@ -71,71 +61,40 @@ h3 {
 	padding-left: 20px;
 	padding-right: 20px;
 }
-
 @media (prefers-color-scheme: dark) {
 	body {
 		background-color: #1C1C1E;
 		color: #f2f2f2;
 	}
-	
 	.topbar {
 		-webkit-box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.25);
 		-moz-box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.25);
 		box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.25);
-	}
-
+	
 	#transaction {
 		background-color: #222222;
 	}
-	
 	p {
 		color: #e6e6e6;
 	}
 }
 @media screen and (max-width: 600px) {
-	.contentPush {
-		height: 53px;
-	}
 	body {
 		width: 100%;
 	}
 	img {
 		width: 100%;
 	}
-	
 	p {
 		width: 100%;
-		padding-left: 10px;
-		padding-right: 10px;
 	}
-	
 	h1 {
 		width: 100%;
-		font-size: 40px;
-		font-weight: 750;
-		padding-top: 0px;
-		padding-bottom: 0px;
-		padding-left: 10px;
-		padding-right: 10px;
 	}
-
 	h2 {
 		width: 100%;
-		font-size: 30px;
-		font-weight: 300;
-		padding-top: 0px;
-		padding-bottom: 0px;
-		padding-left: 10px;
-		padding-right: 10px;
 	}
-
 	h3 {
 		width: 100%;
-		font-size: 25px;
-		font-weight: 200;
-		padding-top: 0px;
-		padding-bottom: 0px;
-		padding-left: 10px;
-		padding-right: 10px;
 	}
 }
