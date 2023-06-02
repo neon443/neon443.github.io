@@ -1,100 +1,97 @@
-* {
-	box-sizing: border-box;
-	margin: 0px;
-}
-b {
-	color: #ff6200
-}
-a {
-	color: #007AFF
-}
-.bar {
-	width: 100%;
-	position: fixed;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
+/*regular text (body, p, b, h*, ) styles*/
+	* {
+		box-sizing: border-box;
+		margin: 0px;
+	}
+	b {
+		color: #ff6200
+	}
+	a {
+		color: #007AFF
+	}
+	body {
+		background-color: #f2f2f2;
+		color: #222;
+		font-family: system-ui;
+	}
+	p {
+		font-size: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	h1 {
+		font-size: 40px;
+		font-weight: 750;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	h2 {
+		font-size: 30px;
+		font-weight: 400;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	h3 {
+		font-size: 25px;
+		font-weight: 400;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+/* regular text (body, p, b, h*, ) styles*/
 
-	-webkit-backdrop-filter: blur(2.5px);
-	-moz-backdrop-filter: blur(2.5px);
-	backdrop-filter: blur(2.5px);
-	
-	-webkit-box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.25);
-	-moz-box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.25);
-	box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.25);	
-}
-
-.barItem {
-	float: left;
-}
-
-.barItem h1 {
-	font-size: 20px;
-	padding: 9px;
-}
-
-.barItem p {
-	font-size: 16px;
-	padding: 12px;
-}
-.barItem a {
-	display: block;
-	color: #222;
-	text-align: center;
-	padding: 12px;
-	text-decoration: none;
-	transition: all 0.2s;
-}
-
-.barItem a:hover {
-	background-color: #222;
-	color: #ddd;
-	font-weight: 600;
-	font-size: 20px;
-	padding: 9px;
-	
-	-webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
-	-moz-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
-	box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);	
-}
 .contentPush{
 	height: 65px;
 }
-body {
-	background-color: #f2f2f2;
-	color: #222;
-	font-family: system-ui;
-}
-p {
-	font-size: 20px;
-	padding-left: 20px;
-	padding-right: 20px;
-}
-h1 {
-	font-size: 40px;
-	font-weight: 750;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	padding-left: 20px;
-	padding-right: 20px;
-}
-h2 {
-	font-size: 30px;
-	font-weight: 400;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	padding-left: 20px;
-	padding-right: 20px;
-}
-h3 {
-	font-size: 25px;
-	font-weight: 400;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	padding-left: 20px;
-	padding-right: 20px;
-}
+
+/* Bar styling*/
+	.bar {
+		width: 100%;
+		position: fixed;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+
+		-webkit-backdrop-filter: blur(2.5px);
+		-moz-backdrop-filter: blur(2.5px);
+		backdrop-filter: blur(2.5px);
+		
+		-webkit-box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.25);
+		-moz-box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.25);
+		box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.25);	
+	}
+	.barItem {
+		float: left;
+		text-align: center;
+	}
+	.barItem h1 {
+		font-size: 20px;
+		padding: 9px;
+	}
+	.barItem * {
+		color: #ddd;
+		text-decoration: none;
+		display:block;
+		transition: all 0.2s;
+		font-size: 16px;
+		padding: 12px;
+	}
+	.barItem *:hover {
+		background-color: #222;
+		color: #ddd;
+		
+		-webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+		-moz-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+		box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);	
+	}
+/* Bar styling*/
+
 @media (prefers-color-scheme: dark) {
 	body {
 		background-color: #222;
@@ -105,34 +102,23 @@ h3 {
 		-moz-box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.25);
 		box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.25);
 	}
-	.barItem a {
-		color: #ddd;
-	}
-	.barItem a:hover {
+	.barItem *:hover {
 		background-color: #ddd;
 		color: #222;
+		
+		-webkit-box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.5);
+		-moz-box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.5);
+		box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.5);	
 	}
 	#transaction {
 		background-color: #222;
 	}
 }
 @media screen and (max-width: 600px) {
-	body {
-		width: 100%;
-	}
 	img {
 		width: 100%;
 	}
 	p {
-		width: 100%;
-	}
-	h1 {
-		width: 100%;
-	}
-	h2 {
-		width: 100%;
-	}
-	h3 {
 		width: 100%;
 	}
 }
