@@ -70,10 +70,6 @@
 		float: left;
 		text-align: center;
 	}
-	.barItem h1 {
-		font-size: 20px;
-		padding: 9px;
-	}
 	.barItem * {
 		color: #222;
 		text-decoration: none;
@@ -81,6 +77,10 @@
 		transition: all 0.2s;
 		font-size: 16px;
 		padding: 12px;
+	}
+	.barItem h1 {
+		font-size: 20px;
+		padding: 9px;
 	}
 	.barItem a:hover {
 		background-color: #222;
