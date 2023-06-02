@@ -75,7 +75,7 @@
 		padding: 9px;
 	}
 	.barItem * {
-		color: #ddd;
+		color: #222;
 		text-decoration: none;
 		display:block;
 		transition: all 0.2s;
