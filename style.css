@@ -1,9 +1,8 @@
 /*regular text (body, p, b, h*) styles*/
 	* {
-		box-sizing: border-box;
 		margin: 0px;
 		font-family: system-ui;
-		transition: all 0.2s;
+		transition: 0.2s;
 	}
 	b {
 		color: #ff6200
@@ -55,7 +54,6 @@
 		width: 100%;
 		position: fixed;
 		list-style-type: none;
-		margin: 0;
 		padding: 0;
 		overflow: hidden;
 		background-color: rgba(255, 255, 255, 0.25);
@@ -83,13 +81,16 @@
 		font-size: 20px;
 		padding: 9px;
 	}
-	.barItem a:hover dropbtn:hover {
+	.barItem a:hover {
 		background-color: #111;
 		color: #eee;
-		
+
 		-webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
 		-moz-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
 		box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
+	}
+	.barItem a:hover {
+		width: 120%;
 	}
 	.bar:has(#barItem1:hover) #barItem2 {
 		background: purple;
