@@ -94,34 +94,6 @@
 	.bar:has(#barItem1:hover) #barItem2 {
 		background: purple;
 	}
-	
-	/* Bar dropdown styling*/
-		.dropbtn {	
-			border: none;
-			outline: none;
-		}
-		.dropbtn:hover .drop-content {
-			display: block;
-			background-color: red;
-			z-index: 100;
-		}
-		.drop-content {
-			display: none;
-			position: absolute;
-			z-index: -1;
-		}
-		.drop-content * {
-			float: none;
-			text-decoration: none;
-			display: block;
-		}
-		.drop-content a:hover {
-			background-color: #ddd;
-		}
-		.drop-content {
-			display: block;
-		}
-	/* Bar dropdown styling*/
 /* Bar styling*/
 
 @media (prefers-color-scheme: dark) {
