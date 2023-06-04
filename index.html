@@ -5,20 +5,21 @@
 		<title>neon443</title>
 		<link rel="icon" type="image/x-icon" href="./images/fav.ico">
 		<link rel="apple-touch-icon" href="./images/app-icon.png">
-		<link rel="manifest" href="./app.webmanifest" />
+		<link rel="manifest" href="./app.webmanifest">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="./style.css" type="text/css">
 	</head>
 	<script type="text/javascript" src="./script.js"></script>
 	<body>
 		<div class="bar">
-			<div id="barItem1" class="barItem"><h1>neon443</h1></div>
-			<div id="barItem2" class="barItem"><a onclick="showAlert();">dont click</a></div>
-			<div id="barItem3" class="barItem"><a href="https://github.com/neon443">Github</a></div>
-			<div id="barItem4" class="barItem"><p>Text</p></div>
-			<div id="barItem5" class="barItem"><a href="mailto:vape.master.69@hotmail.com">Contact</a></div>	
+			<div class="barItem" onclick="notLink()">	<h1>neon443</h1>											</div>
+			<div class="barItem">						<a onclick="showAlert();">dont click</a>					</div>
+			<div class="barItem">						<a href="https://github.com/neon443">Github</a>				</div>
+			<div class="barItem" onclick="notLink()">	<p>Text</p>													</div>
+			<div class="barItem">						<a href="mailto:vape.master.69@hotmail.com">Contact</a>		</div>	
 		</div>
 		<div class="contentPush"></div>
+		<div id="notLinkToast">Not a link!</div>
 		<p>
 			<b>My Projects</b><br>
 				<b>├─</b>	<a href="https://neon443.github.io/eaglercraft152/">eaglercraft152</a> - Minecraft 1.5.2<br>
