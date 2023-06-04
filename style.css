@@ -53,11 +53,11 @@
 	.bar {
 		width: 100%;
 		position: fixed;
+		display: flex;
 		list-style-type: none;
 		padding: 0;
 		overflow: hidden;
 		background-color: rgba(255, 255, 255, 0.25);
-		list-style-type: none;
 
 		-webkit-backdrop-filter: blur(2.5px);
 		-moz-backdrop-filter: blur(2.5px);
@@ -69,12 +69,13 @@
 	}
 	.barItem {
 		float: left;
+		flex: 1;
 		text-align: center;
 	}
 	.barItem * {
+		display: block;
 		color: #222;
 		text-decoration: none;
-		display: block;
 		font-size: 16px;
 		padding: 12px;
 	}
@@ -84,13 +85,12 @@
 	.barItem a:hover {
 		background-color: #111;
 		color: #eee;
-
+		
 		-webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
 		-moz-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
 		box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
 	}
-	.bar:has(#barItem1:hover) #barItem2 {
-		
+	.bar:has(a:hover) .barItem {
 	}
 /* Bar styling*/
 
@@ -124,18 +124,4 @@
 	p {
 		width: 100%;
 	}
-}
-
-/* flexbox waffle */
-.flexContainer {
-	height: 300px;
-	display: flex;
-}
-
-.flexItem {
-	margin: 10px;
-	background: orangered;
-	color: white;
-	flex-grow: 1;
-	background: purple;
 }
