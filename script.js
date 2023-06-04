@@ -7,7 +7,6 @@ function notLink() {
 	notLinkToast.className = "show";
 	setTimeout(
 		function() {
-			x.className = x.className.replace("show", "");
-		}
-	, 3000);
+			notLinkToast.className = notLinkToast.className.replace("show", "");
+		}, 3000);
 }

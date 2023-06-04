@@ -3,6 +3,8 @@
 		margin: 0px;
 		font-family: system-ui;
 		transition: 0.2s;
+		color: #222;
+
 	}
 	b {
 		color: #ff6200
@@ -12,7 +14,6 @@
 	}
 	body {
 		background-color: #ddd;
-		color: #222;
 	}
 	p {
 		font-size: 20px;
@@ -23,7 +24,7 @@
 		font-size: 40px;
 		font-weight: 750;
 		padding-top: 0px;
-		padding-bottom: 0px;
+		padding-top: 0px;
 		padding-left: 20px;
 		padding-right: 20px;
 	}
@@ -31,7 +32,7 @@
 		font-size: 30px;
 		font-weight: 400;
 		padding-top: 0px;
-		padding-bottom: 0px;
+		padding-top: 0px;
 		padding-left: 20px;
 		padding-right: 20px;
 	}
@@ -39,7 +40,7 @@
 		font-size: 25px;
 		font-weight: 400;
 		padding-top: 0px;
-		padding-bottom: 0px;
+		padding-top: 0px;
 		padding-left: 20px;
 		padding-right: 20px;
 	}
@@ -63,15 +64,12 @@
 		display: flex;
 		padding: 0;
 		overflow: hidden;
+		z-index: 2;
 		background-color: rgba(255, 255, 255, 0.25);
 
 		-webkit-backdrop-filter: blur(2.5px);
 		-moz-backdrop-filter: blur(2.5px);
 		backdrop-filter: blur(2.5px);
-		
-		-webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
-		-moz-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
-		box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
 	}
 	.barItem {
 		float: left;
@@ -83,16 +81,19 @@
 		color: #222;
 		text-decoration: none;
 		font-size: 20px;
-		padding: 9.20px 12px;
+		padding: 9.2px 12px;
 	}
 	.barItem h1 {
 		font-size: 30px;
 		padding-top: 2.5px;
 		padding-bottom: 2.5px;
+		border-right-style: solid;
+		border-width: 1.5px;
+		border-color: #222;
 	}
 	.barItem:hover {
 		flex: 1.5;
-		background-color: #eee;
+		background-color: #fff;
 	}
 	.barItem *:hover {
 		font-size: 30px;
@@ -103,76 +104,76 @@
 	.barItem a:hover {
 		background-color: #111;
 		color: #eee;
-		
-		animation-name: NAME;
-		animation-delay: 0.2s;
-		animation-duration: 4s;
-		animation-iteration-count: infinite;
 
 		-webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
 		-moz-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
 		box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
 	}
-	html:has(.barItem a:hover) .notLink {
-		font-size: 16px;
-	}
+	html:has(.barItem a:hover) . {}
 	/* not Link toast*/
 		#notLinkToast {
 			visibility: hidden;
 			min-width: 250px;
 			margin-left: -125px;
-			background-color: #333;
-			color: #fff;
+			background-color: rgba(255, 255, 255, 0.25);
 			text-align: center;
-			border-radius: 2px;
+			border-radius: 0px 0px 10px 10px;
 			padding: 16px;
 			position: fixed;
 			z-index: 1;
 			left: 50%;
-			top: 30px;
-			font-size: 17px;
-		}
+			top: 45px;
+			font-size: 20px;
 
+			-webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
+			-moz-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
+			box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
+
+			-webkit-backdrop-filter: blur(2.5px);
+			-moz-backdrop-filter: blur(2.5px);
+			backdrop-filter: blur(2.5px);
+
+		}
 		#notLinkToast.show {
 			visibility: visible;
-			-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-			animation: fadein 0.5s, fadeout 0.5s 2.5s;
+			-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s forwards;
+			animation: fadein 0.5s, fadeout 0.5s 2.5s forwards;
 		}
-		@-webkit-keyframes fadein {
-			from {top: 0; opacity: 0;} 
-			to {top: 30px; opacity: 1;}
-		}
-
-		@keyframes fadein {
-			from {top: 0; opacity: 0;}
-			to {top: 30px; opacity: 1;}
-		}
-
-		@-webkit-keyframes fadeout {
-			from {top: 30px; opacity: 1;} 
-			to {top: 0; opacity: 0;}
-		}
-
-		@keyframes fadeout {
-			from {top: 30px; opacity: 1;}
-			to {top: 0; opacity: 0;}
-		}
+			@-webkit-keyframes fadein {
+				from {top: 0; opacity: 0;} 
+				to {top: 45px; opacity: 1;}
+			}
+			@keyframes fadein {
+				from {top: 0; opacity: 0;}
+				to {top: 45px; opacity: 1;}
+			}
+			@-webkit-keyframes fadeout {
+				from {top: 45px; opacity: 1;} 
+				to {top: 0; opacity: 0;}
+			}
+			@keyframes fadeout {
+				from {top: 45px; opacity: 1;}
+				to {top: 0; opacity: 0;}
+			}
 	/* not Link toast */
 /* Bar styling */
 
 @media (prefers-color-scheme: dark) {
+	* {
+		color: #ddd;
+	}
 	body {
 		background-color: #222;
 		color: #ddd;
 	}
 	.bar {
 		background-color: rgba(0, 0, 0, 0.25);
-		-webkit-box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.25);
-		-moz-box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.25);
-		box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.25);
 	}
 	.barItem * {
 		color: #ddd;
+	}
+	.barItem h1 {
+		border-color: #ddd;
 	}
 	.barItem:hover {
 		background-color: #555;
@@ -181,6 +182,12 @@
 		background-color: #eee;
 		color: #111;
 		
+		-webkit-box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.25);
+		-moz-box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.25);
+		box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.25);
+	}
+	#notLinkToast {
+		background-color: rgba(0, 0, 0, 0.25);
 		-webkit-box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.25);
 		-moz-box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.25);
 		box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.25);
