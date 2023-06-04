@@ -68,7 +68,7 @@
 	}
 	.barItem {
 		float: left;
-		flex: 1;
+		flex-grow: 1;
 		text-align: center;
 	}
 	.barItem * {
@@ -120,5 +120,4 @@
 	img {
 		width: 100%;
 	}
-
 }
