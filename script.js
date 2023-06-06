@@ -1,12 +1,12 @@
 function showAlert() {
 	alert("Hey! this is under development. i told u not to click.");
-}
+};
 
-function notLink() {
-	var notLinkToast = document.getElementById("notLinkToast");
-	notLinkToast.className = "show";
+function ntLnk() {
+	var ntLnkToast = document.getElementById("ntLnkToast");
+	ntLnkToast.className = "show";
 	setTimeout(
 		function() {
-			notLinkToast.className = notLinkToast.className.replace("show", "");
+			ntLnkToast.className = ntLnkToast.className.replace("show", "");
 		}, 3000);
 }
