@@ -1,11 +1,11 @@
 {
-  "name": "neon443 Progressive Web App",
+  "name": "neon443 PWA",
   "short_name": "neon443",
   "description": ".",
   "icons": [
     {
-      "src": "./images/app-icon.png",
-      "sizes": "512×512",
+      "src": "./images/icon.png",
+      "sizes": "1024x1024",
       "type": "image/png"
     }
   ],
