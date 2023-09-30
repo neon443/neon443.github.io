@@ -60,14 +60,7 @@
 .contentPush{
 	height: 65px;
 }
-.ntLnk {
-	position: fixed;
-	top: 47.5px;
-	width: 100%;
-	border-radius: 0% 0% 15% 15%;
-	text-align: center;
-	font-size: 0px;
-}
+
 /* Bar styling*/
 	.bar {
 		width: 100%;
@@ -117,56 +110,22 @@
 		-moz-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
 		box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
 	}
-	html:has(.barItem a:hover) . {}
-	/* not Link toast*/
-.tool {
-	text-decoration: none;
-	position: relative;
-}
-.tip * {
-	display: none;
-}
-.tip:hover * {
-	display: block;
-	position: fixed;
-	overflow: hidden;
-}
-		#ntLnkToast {
-			display: none;
-			min-width: 250px;
-			margin-left: -125px;
-			background-color: rgba(255, 255, 255, 0.25);
-			text-align: center;
-			border-radius: 0px 0px 10px 10px;
-			padding: 16px;
-			position: fixed;
-			left: 50%;
-			top: 45px;
-			font-size: 20px;
-
-			-webkit-backdrop-filter: blur(2.5px);
-			-moz-backdrop-filter: blur(2.5px);
-			backdrop-filter: blur(2.5px);
-
-		}
-		#ntLnkToast.show {
-			display: block;
-			animation-name: fadein;
-			animation-duration: 0.5s;
-			animation-name: fadeout;
-			animation-delay: 2.6s;
-			animation-duration: 0.5s;
-		}
-			@keyframes fadein {
-				from {top: 0; opacity: 0;}
-				to {top: 45px; opacity: 1;}
-			}
-			@keyframes fadeout {
-				from {top: 45px; opacity: 1;}
-				to {top: 0; opacity: 0;}
-			}
-	/* not Link toast */
 /* Bar styling */
+
+.box1 {
+	float: left;
+	display: block;
+	width: 9%;
+	height: auto;
+	padding: 20px 10px;
+}
+.box2 {
+	float: left;
+	display: block;
+	width: 9%;
+	height: auto;
+	padding: 20px 10px;
+}
 
 @media (prefers-color-scheme: dark) {
 	* {
