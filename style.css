@@ -59,6 +59,8 @@
 
 .contentPush{
 	height: 65px;
+	positon: fixed;
+	top: 0;
 }
 
 /* Bar styling*/
