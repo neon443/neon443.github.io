@@ -125,6 +125,21 @@ h3 {
 	padding: 20px 10px;
 }
 
+@keyframes iconhover {
+	from {transform: scale(1, 1);}
+	to {transform: scale(1.05, 1.05)}
+}
+.icon {
+	border-radius: 5px;
+}
+.icon:hover {
+	
+	animation-name: iconhover;
+	animation-duration: 0.25s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+}
+
 @media (prefers-color-scheme: dark) {
 	* {
 		color: #ddd;
