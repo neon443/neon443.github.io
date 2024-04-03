@@ -117,6 +117,21 @@ h3 {
 }
 /* Bar styling */
 
+.box1 {
+	float: left;
+	display: block;
+	width: 9%;
+	height: auto;
+	padding: 20px 10px;
+}
+.box2 {
+	float: left;
+	display: block;
+	width: 9%;
+	height: auto;
+	padding: 20px 10px;
+}
+
 td p {
 	text-align: center;
 }

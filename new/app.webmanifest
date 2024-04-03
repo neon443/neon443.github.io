@@ -1,0 +1,16 @@
+{
+  "name": "neon443",
+  "short_name": "neon443",
+  "description": ".",
+  "icons": [
+    {
+      "src": "./images/icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "https://neon443.github.io/",
+  "display": "fullscreen",
+  "theme_color": "#000",
+  "background_color": "#000"
+}
