@@ -117,17 +117,30 @@ h3 {
 }
 /* Bar styling */
 
+table {
+	table-layout: fixed;
+	width: 100%;
+}
+
+td {
+	padding: 0px;
+}
+
 td p {
 	text-align: center;
+	font-size: 15px;
 }
 td img{
+	height:	100px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	transform: scale(0.9, 0.9);
-	border-radius: 5px;
+	border-radius: 10px;
 	transition: all 0.2s ease-in-out 100ms;
+	position: relative;
 }
+
 td img:hover {
 	transform: scale(1, 1);
 }
