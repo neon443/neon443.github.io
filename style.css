@@ -27,6 +27,7 @@
 	font-family: system-ui;
 	transition: 0.2s;
 	color: #222;
+	box-sizing: border-box;
 }
 b {
 	color: #ff6200;
@@ -117,33 +118,35 @@ h3 {
 }
 /* Bar styling */
 
-table {
-	table-layout: fixed;
-	width: 100%;
+.homescreen {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Responsive grid */
+	gap: 20px;
+	padding: 20px;
+	justify-content: center;
 }
 
-td {
-	padding: 0px;
-	margin: 0px;
-}
-
-td p {
+.app {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	text-align: center;
-	font-size: 15px;
-}
-td img{
-	height:	150px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	transform: scale(0.9, 0.9);
-	border-radius: 10px;
-	transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-	position: relative;
+	text-decoration: none;
 }
 
-td img:hover {
-	transform: scale(1, 1);
+.app img {
+	width: auto;
+	height: 100px;
+	border-radius: 5px;
+	transition: transform 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.app:hover img {
+	transform: scale(1.1); /* Grow effect */
+}
+
+.label {
+	margin-top: 5px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -176,4 +179,9 @@ td img:hover {
 }
 
 @media screen and (max-width: 600px) {
+	.app img {
+		width: auto;
+		height: 80px;
+		border-radius: 20px;
+	}
 }
