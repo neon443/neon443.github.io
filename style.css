@@ -5,7 +5,7 @@
 /* 		Theme: #ddd */
 /* 		text: #222 */
 /* 		UI item bgs: #aaa */
-/* 		for contrast: #aaa */
+/* 		for contrast: #333 */
 /* 		transparency: rgba(255, 255, 255, 0.25) */
 /* 		box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25); */
 /* 		bar link hover bg color: #111 */
@@ -14,7 +14,7 @@
 /* 		Theme: #222 */
 /* 		text: #ddd */
 /* 		UI item bgs: #555 */
-/* 		for contrast: #555 */
+/* 		for contrast: #ddd */
 /* 		transparency: rgba(0, 0, 0, 0.25) */
 /* 		box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.25); */
 /* 		bar link hover bg color: #eee */
@@ -39,6 +39,7 @@ body {
 	background-color: #ddd;
 }
 p {
+	margin: 10px 0px;
 	font-size: 20px;
 	padding: 0px 20px;
 }
@@ -56,6 +57,14 @@ h3 {
 	font-size: 25px;
 	font-weight: 400;
 	padding: 0px 20px;
+}
+h5 {
+	font-size: 25px;
+	font-weight: 100;
+	padding: 0px 20px;
+}
+.center {
+	text-align: center;
 }
 /* regular text (body, p, b, h*) styles*/
 
@@ -122,31 +131,54 @@ h3 {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Responsive grid */
 	gap: 20px;
-	padding: 20px;
+	margin: 20px;
 	justify-content: center;
 }
 
 .app {
+	padding: 1px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
 	text-decoration: none;
+	transition: 0.2s ease-in-out;
 }
 
 .app img {
+	margin-top: 5px;
 	width: auto;
 	height: 100px;
 	border-radius: 5px;
 	transition: transform 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.app:hover img {
+.app:hover {
 	transform: scale(1.1); /* Grow effect */
+	font-weight: 1000;
+	font-size: large;
+	color: #ff6200;
+	background-color: rgba(255, 255, 255, 0.2);
+	background-clip: border-box;
+	box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.3);
 }
 
 .label {
 	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.footer {
+	background-color: rgba(0, 0, 0, 0.2);
+	padding-top: 20px;
+}
+
+.footer img {
+	padding: 20px;
+}
+
+.themednotByAI {
+	content: url("./images/notByAI.svg");
 }
 
 @media (prefers-color-scheme: dark) {
@@ -170,11 +202,14 @@ h3 {
 		background-color: #333;
 	}
 	.barItem a:hover {
-		background-color: #888;
+		background-color: #ddd;
 		color: #222;
 		-webkit-box-shadow: 0px 0px 5px 5px rgba(200, 200, 200, 0.8);
 		-moz-box-shadow: 0px 0px 5px 5px rgba(200, 200, 200, 0.8);
 		box-shadow: 0px 0px 5px 5px rgba(200, 200, 200, 0.8);
+	}
+	.themednotByAI {
+		content: url("./images/notByAIDark.svg");
 	}
 }
 
