@@ -1,0 +1,14 @@
+{
+  "identifier" : "1AA6D3C5-99C0-4078-9791-0FBD354C1686",
+  "ignoredFilePatterns" : [
+    ".git",
+    ".DS_Store",
+    "._.DS_Store",
+    ".nova"
+  ],
+  "localPath" : ".",
+  "remotePath" : "\/domains\/neon443.x10.mx\/public_html",
+  "remoteURL" : "http:\/\/neon443.x10.mx",
+  "server" : "x10 Hosting",
+  "usesPublishing" : true
+}
