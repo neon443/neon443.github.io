@@ -1,0 +1,6 @@
+[submodule "games/eaglercraft152"]
+	path = games/eaglercraft152
+	url = https://github.com/neon443/eaglercraft152
+[submodule "games/eaglercraftX188"]
+	path = games/eaglercraftX188
+	url = https://github.com/neon443/eaglercraftX188
