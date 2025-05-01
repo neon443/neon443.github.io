@@ -188,23 +188,27 @@ h5 {
 	margin-top: 5px;
 	width: 100px;
 	height: 100px;
-	border-radius: 10px;
+	border-radius: 15px;
 	transition: 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .app:hover {
 	transform: scale(1.1);
-	font-weight: 1000;
-	font-size: large;
+	font-weight: 800;
+	font-size: medium;
 	color: #ff6200;
-	background-color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(255, 255, 255, 0.05);
 	background-clip: border-box;
-	box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.3);
+	box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.2);
 }
 
 .label {
 	margin-top: 5px;
 	margin-bottom: 5px;
+}
+
+.themednotByAI:hover {
+	content: url("./images/notByAIDark.svg");
 }
 
 @media (prefers-color-scheme: dark) {
@@ -239,6 +243,9 @@ h5 {
 	}
 	.themednotByAI {
 		content: url("./images/notByAIDark.svg");
+	}
+	.themednotByAI:hover {
+		content: url("./images/notByAI.svg");
 	}
 }
 
