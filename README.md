@@ -3,4 +3,4 @@
 Free unblocked games to play in school. No ads, ever.
 For any teachers reading, this site is purely for educational purposes.
 
-##### To request features [create an issue](https://github.com/neon443/neon443.github.io/issues/new).
+#### To request features [create an issue](https://github.com/neon443/neon443.github.io/issues/new).
