@@ -8,7 +8,7 @@
             <sparkle:version>5</sparkle:version>
             <sparkle:shortVersionString>1.2.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
-            <enclosure url="https://neon443.github.io/appcasts/DockPhobia/DockPhobia_1.2.1%20(5).dmg" length="6177268" type="application/octet-stream"/>
+            <enclosure url="https://neon443.github.io/appcasts/DockPhobia/DockPhobia_1.2.1%20(5).dmg" sparkle:edSignature="gjnhGKcHwLfqYwvAi0dVk0jK67wKDbkHoFT1rrrvbCnrHi3H/UVEtWSKWEQp9SLaEI6K/NNPPGTtnTH89uD8Dg==" length="6177268" type="application/octet-stream"/>
         </item>
         <item>
             <title>1.2.1</title>
@@ -16,7 +16,7 @@
             <sparkle:version>2</sparkle:version>
             <sparkle:shortVersionString>1.2.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
-            <enclosure url="https://neon443.github.io/appcasts/DockPhobia/DockPhobia_1.2.1.dmg" length="6255139" type="application/octet-stream"/>
+            <enclosure url="https://neon443.github.io/appcasts/DockPhobia/DockPhobia_1.2.1.dmg" sparkle:edSignature="bpqp7G4lp30fL3G5xoFB/s6vXMw/HJnyK2p5guFKQ4sZYvSZpKZ3kvpYkRmbAJc1fnTdIEQ8M+YgdyGxmaLjDA==" length="6255139" type="application/octet-stream"/>
         </item>
     </channel>
 </rss>
