@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>DockPhobia</title>
+        <item>
+            <title>1.0</title>
+            <pubDate>Fri, 30 May 2025 12:57:58 +0100</pubDate>
+            <sparkle:version>4</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
+            <enclosure url="DockPhobia.1.0.dmg" length="5359881" type="application/octet-stream"/>
+        </item>
+        <item>
+            <title>1.0.1</title>
+            <pubDate>Fri, 30 May 2025 12:58:00 +0100</pubDate>
+            <sparkle:version>1</sparkle:version>
+            <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
+            <enclosure url="DockPhobia.1.0.1.dmg" length="5326180" type="application/octet-stream"/>
+        </item>
+    </channel>
+</rss>
