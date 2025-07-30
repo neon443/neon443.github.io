@@ -168,10 +168,10 @@ h5 {
 
 .homescreen {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-	gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	gap: 0px;
 	margin-top: 10px;
-	justify-items: start;
+	justify-items: center; /* center-align app tiles */
 }
 
 .app {
